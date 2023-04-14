@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+button {
+  cursor: pointer;
+}
+h1 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+}
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#menu-input,
+#menu-btn {
+  padding: 10px 15px;
+  font-size: 16px;
+}
+#menu-input {
+  /* width: 90%; */
+  flex-grow: 4;
+}
+#menu-btn {
+  /* width: 10%; */
+  flex-grow: 1;
+}
+
+#todo-list {
+  margin-top: 30px;
+}
+.item-container {
+  position: relative;
+  margin-top: 10px;
+}
+.list-item {
+  padding: 10px 15px;
+  background: gainsboro;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.number-order {
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  left: -20px;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 10px;
+  right: -20px;
+  border: 0;
+  background: transparent;
+  font-size: 18px;
+  transition: 0.14s;
+}
+.remove-btn:hover {
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 70%;
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+  #menu-input {
+    max-width: 100%;
+  }
+  #menu-btn {
+    max-width: 100%;
+  }
+}
