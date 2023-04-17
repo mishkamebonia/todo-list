@@ -19,7 +19,7 @@ const addEvent = function() {
 
   const removeBtn = document.createElement("button")
   removeBtn.addEventListener("click", () => {
-    newDiv.innerHTML = ""
+    newDiv.remove()
   })
 
   removeBtn.classList.add("remove-btn")

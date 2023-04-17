@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+body {
+  background: #F2E3DB;
+}
 button {
   cursor: pointer;
 }
@@ -11,6 +14,7 @@ h1 {
   font-size: 18px;
   text-align: center;
   margin-bottom: 30px;
+  color: #263A29;
 }
 .container {
   max-width: 500px;
@@ -29,10 +33,31 @@ h1 {
 #menu-input {
   /* width: 90%; */
   flex-grow: 4;
+  border: 1px solid #263A29;
+  border-radius: 20px;
+  outline: none;
+  color: #F2E3DB;
+  background: #41644A;
+  transition: 0.16s;
+}
+#menu-input::placeholder {
+  color: #F2E3DB;
+}
+#menu-input:focus::placeholder {
+  color: #263A29;
+}
+#menu-input:focus {
+  background: rgba(65, 100, 74, 0.1);
+  color: #263A29;
 }
 #menu-btn {
   /* width: 10%; */
   flex-grow: 1;
+  border: 1px solid #263A29;
+  background: #41644A;
+  color: #F2E3DB;
+  border-radius: 20px;
+  outline: none;
 }
 
 #todo-list {
@@ -44,7 +69,8 @@ h1 {
 }
 .list-item {
   padding: 10px 15px;
-  background: gainsboro;
+  background: #41644A;
+  color: #F2E3DB;
   margin-top: 10px;
   font-size: 16px;
 }
@@ -53,6 +79,7 @@ h1 {
   position: absolute;
   top: 10px;
   left: -20px;
+  color: #263A29;
 }
 
 .remove-btn {
@@ -63,6 +90,7 @@ h1 {
   background: transparent;
   font-size: 18px;
   transition: 0.14s;
+  color: #263A29;
 }
 .remove-btn:hover {
   color: red;
